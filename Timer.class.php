@@ -35,11 +35,14 @@ class Timer {
 			foreach (self::$finished_timers as $timer_name => $array) {
 				if ($array) {
 					if (count($array) > 1) {
-						$return[$timer_name]['average'] = array_sum($array) / count($array);
-						$return[$timer_name]['total'] = array_sum($array);
-						$return[$timer_name]['timers'] = count($array);
+						$sum = array_sum($array);
+						$count = count($array);
+						
+						$return[$timer_name]['average'] = $sum / $count;
+						$return[$timer_name]['sum'] = $sum;
 						$return[$timer_name]['min'] = min($array);
 						$return[$timer_name]['max'] = max($array);
+						$return[$timer_name]['count'] = $count;
 					} else {
 						$return[$timer_name] = $array[0];
 					}

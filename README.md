@@ -40,19 +40,19 @@ outputs something like:
         [i_loop] => Array
             (
                 [average] => 0.051822128295898
-                [total] => 2.5911064147949
-                [timers] => 50
+                [sum] => 2.5911064147949
                 [min] => 0.049572944641113
                 [max] => 0.10901999473572
+                [count] => 50
             )
 
         [j_loop] => Array
             (
                 [average] => 0.0010195737838745
-                [total] => 2.5489344596863
-                [timers] => 2500
+                [sum] => 2.5489344596863
                 [min] => 0.00023293495178223
                 [max] => 0.058215856552124
+                [count] => 2500
             )
     
         [wrong_order] => Array
